@@ -1,0 +1,9 @@
+platform :osx, '10.11'
+
+target 'ffmpeg-player-demo' do
+  
+  use_frameworks!
+  
+  pod 'LibFfmpeg'
+
+end
