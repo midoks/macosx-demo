@@ -534,7 +534,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/LibFfmpeg\"",
-					"\"${PROJECT_ROOT}/mpv-demo/Deps/include\"",
+					"$(PROJECT_DIR)/mpv-demo/Deps/include",
 				);
 				INFOPLIST_FILE = "mpv-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -563,7 +563,7 @@
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/LibFfmpeg\"",
-					"\"${PROJECT_ROOT}/mpv-demo/Deps/include\"",
+					"$(PROJECT_DIR)/mpv-demo/Deps/include",
 				);
 				INFOPLIST_FILE = "mpv-demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

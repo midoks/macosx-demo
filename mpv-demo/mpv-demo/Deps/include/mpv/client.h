@@ -606,7 +606,7 @@ int mpv_load_config_file(mpv_handle *ctx, const char *filename);
  *
  * Calling this on an uninitialized player (see mpv_create()) will deadlock.
  *
- * @deprecated This function, as well as mpv_resume(), are deprecated, and
+ * @\deprecated This function, as well as mpv_resume(), are deprecated, and
  *             will stop doing anything soon. Their semantics were never
  *             well-defined, and their usefulness is extremely limited. The
  *             calls will remain stubs in order to keep ABI compatibility.
@@ -1305,7 +1305,7 @@ typedef enum mpv_event_id {
      * was found. This doesn't necessarily indicate a track switch; for this,
      * MPV_EVENT_TRACK_SWITCHED is used.)
      *
-     * @deprecated This is equivalent to using mpv_observe_property() on the
+     * @\deprecated This is equivalent to using mpv_observe_property() on the
      *             "track-list" property. The event is redundant, and might
      *             be removed in the far future.
      */
@@ -1313,7 +1313,7 @@ typedef enum mpv_event_id {
     /**
      * A video/audio/subtitle track was switched on or off.
      *
-     * @deprecated This is equivalent to using mpv_observe_property() on the
+     * @\deprecated This is equivalent to using mpv_observe_property() on the
      *             "vid", "aid", and "sid" properties. The event is redundant,
      *             and might be removed in the far future.
      */
@@ -1344,14 +1344,14 @@ typedef enum mpv_event_id {
      * "pause" property and ignore MPV_EVENT_PAUSE/UNPAUSE. Likewise, the
      * "core-idle" property tells you whether video is actually playing or not.
      *
-     * @deprecated The event is redundant with mpv_observe_property() as
+     * @\deprecated The event is redundant with mpv_observe_property() as
      *             mentioned above, and might be removed in the far future.
      */
     MPV_EVENT_PAUSE             = 12,
     /**
      * Playback was unpaused. See MPV_EVENT_PAUSE for not so obvious details.
      *
-     * @deprecated The event is redundant with mpv_observe_property() as
+     * @\deprecated The event is redundant with mpv_observe_property() as
      *             explained in the MPV_EVENT_PAUSE comments, and might be
      *             removed in the far future.
      */
@@ -1362,12 +1362,12 @@ typedef enum mpv_event_id {
      * is paused - but that will be removed in the future, and it will be
      * restricted to video frames only.
      *
-     * @deprecated Use mpv_observe_property() with relevant properties instead
+     * @\deprecated Use mpv_observe_property() with relevant properties instead
      *             (such as "playback-time").
      */
     MPV_EVENT_TICK              = 14,
     /**
-     * @deprecated This was used internally with the internal "script_dispatch"
+     * @\deprecated This was used internally with the internal "script_dispatch"
      *             command to dispatch keyboard and mouse input for the OSC.
      *             It was never useful in general and has been completely
      *             replaced with "script-binding".
@@ -1406,7 +1406,7 @@ typedef enum mpv_event_id {
      * unspecified whether this happens on file start or only when it changes
      * within a file.)
      *
-     * @deprecated This is equivalent to using mpv_observe_property() on the
+     * @\deprecated This is equivalent to using mpv_observe_property() on the
      *             "metadata" property. The event is redundant, and might
      *             be removed in the far future.
      */
@@ -1433,7 +1433,7 @@ typedef enum mpv_event_id {
     /**
      * Happens when the current chapter changes.
      *
-     * @deprecated This is equivalent to using mpv_observe_property() on the
+     * @\deprecated This is equivalent to using mpv_observe_property() on the
      *             "chapter" property. The event is redundant, and might
      *             be removed in the far future.
      */
@@ -1599,7 +1599,7 @@ typedef struct mpv_event_end_file {
 } mpv_event_end_file;
 
 #if MPV_ENABLE_DEPRECATED
-/** @deprecated see MPV_EVENT_SCRIPT_INPUT_DISPATCH for remarks
+/** @\deprecated see MPV_EVENT_SCRIPT_INPUT_DISPATCH for remarks
  */
 typedef struct mpv_event_script_input_dispatch {
     int arg0;
@@ -1927,7 +1927,7 @@ int mpv_hook_continue(mpv_handle *ctx, uint64_t id);
  *      }
  *  }
  *
- * @deprecated this function will be removed in the future. If you need this
+ * @\deprecated this function will be removed in the future. If you need this
  *             functionality, use mpv_set_wakeup_callback(), create a pipe
  *             manually, and call write() on your pipe in the callback.
  *
@@ -1937,7 +1937,7 @@ int mpv_hook_continue(mpv_handle *ctx, uint64_t id);
 int mpv_get_wakeup_pipe(mpv_handle *ctx);
 
 /**
- * @deprecated use render.h
+ * @\deprecated use render.h
  */
 typedef enum mpv_sub_api {
     /**
@@ -1947,7 +1947,7 @@ typedef enum mpv_sub_api {
      * Will return NULL if unavailable (if OpenGL support was not compiled in).
      * See opengl_cb.h for details.
      *
-     * @deprecated use render.h
+     * @\deprecated use render.h
      */
     MPV_SUB_API_OPENGL_CB = 1
 } mpv_sub_api;
@@ -1956,7 +1956,7 @@ typedef enum mpv_sub_api {
  * This is used for additional APIs that are not strictly part of the core API.
  * See the individual mpv_sub_api member values.
  *
- * @deprecated use render.h
+ * @\deprecated use render.h
  */
 void *mpv_get_sub_api(mpv_handle *ctx, mpv_sub_api sub_api);
 
