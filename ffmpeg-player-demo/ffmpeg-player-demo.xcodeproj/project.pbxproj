@@ -14,6 +14,11 @@
 		822AB00D2401B29600AA8B87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB00C2401B29600AA8B87 /* main.m */; };
 		822AB0182401B29800AA8B87 /* ffmpeg_player_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0172401B29800AA8B87 /* ffmpeg_player_demoTests.m */; };
 		822AB0232401B29800AA8B87 /* ffmpeg_player_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0222401B29800AA8B87 /* ffmpeg_player_demoUITests.m */; };
+		822AB0342402352C00AA8B87 /* DemoView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0332402352C00AA8B87 /* DemoView.mm */; };
+		822AB0372402448E00AA8B87 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0362402448D00AA8B87 /* demo.mp4 */; };
+		822AB03924025B2E00AA8B87 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822AB03824025B2E00AA8B87 /* CoreMedia.framework */; };
+		822AB03B24025C1000AA8B87 /* Metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 822AB03A24025C1000AA8B87 /* Metal.metal */; };
+		822AB03E24025F5500AA8B87 /* DemoVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB03D24025F5500AA8B87 /* DemoVoiceView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,13 @@
 		822AB01E2401B29800AA8B87 /* ffmpeg-player-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ffmpeg-player-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		822AB0222401B29800AA8B87 /* ffmpeg_player_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ffmpeg_player_demoUITests.m; sourceTree = "<group>"; };
 		822AB0242401B29800AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822AB0302402314E00AA8B87 /* DemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
+		822AB0332402352C00AA8B87 /* DemoView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoView.mm; sourceTree = "<group>"; };
+		822AB0362402448D00AA8B87 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		822AB03824025B2E00AA8B87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		822AB03A24025C1000AA8B87 /* Metal.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Metal.metal; sourceTree = "<group>"; };
+		822AB03C24025F5500AA8B87 /* DemoVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVoiceView.h; sourceTree = "<group>"; };
+		822AB03D24025F5500AA8B87 /* DemoVoiceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoVoiceView.m; sourceTree = "<group>"; };
 		B088D808877C3DC3D7BAC663 /* Pods_ffmpeg_player_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ffmpeg_player_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67B143798C247C7CFBA33B7 /* Pods-ffmpeg-player-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ffmpeg-player-demo.release.xcconfig"; path = "Target Support Files/Pods-ffmpeg-player-demo/Pods-ffmpeg-player-demo.release.xcconfig"; sourceTree = "<group>"; };
 		DD08C66664134E62BFD4BB4A /* Pods-ffmpeg-player-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ffmpeg-player-demo.debug.xcconfig"; path = "Target Support Files/Pods-ffmpeg-player-demo/Pods-ffmpeg-player-demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822AB03924025B2E00AA8B87 /* CoreMedia.framework in Frameworks */,
 				408F00460991B1F9A068C3AC /* Pods_ffmpeg_player_demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +98,6 @@
 				DD08C66664134E62BFD4BB4A /* Pods-ffmpeg-player-demo.debug.xcconfig */,
 				C67B143798C247C7CFBA33B7 /* Pods-ffmpeg-player-demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +126,12 @@
 		822AB0022401B29000AA8B87 /* ffmpeg-player-demo */ = {
 			isa = PBXGroup;
 			children = (
+				822AB03A24025C1000AA8B87 /* Metal.metal */,
+				822AB0352402448D00AA8B87 /* Assets */,
+				822AB0302402314E00AA8B87 /* DemoView.h */,
+				822AB0332402352C00AA8B87 /* DemoView.mm */,
+				822AB03C24025F5500AA8B87 /* DemoVoiceView.h */,
+				822AB03D24025F5500AA8B87 /* DemoVoiceView.m */,
 				822AB0032401B29000AA8B87 /* AppDelegate.h */,
 				822AB0042401B29000AA8B87 /* AppDelegate.m */,
 				822AB0062401B29600AA8B87 /* Assets.xcassets */,
@@ -143,9 +161,18 @@
 			path = "ffmpeg-player-demoUITests";
 			sourceTree = "<group>";
 		};
+		822AB0352402448D00AA8B87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0362402448D00AA8B87 /* demo.mp4 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		8657CDE7FDBCEA2078888311 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				822AB03824025B2E00AA8B87 /* CoreMedia.framework */,
 				B088D808877C3DC3D7BAC663 /* Pods_ffmpeg_player_demo.framework */,
 			);
 			name = Frameworks;
@@ -256,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				822AB0072401B29600AA8B87 /* Assets.xcassets in Resources */,
+				822AB0372402448E00AA8B87 /* demo.mp4 in Resources */,
 				822AB00A2401B29600AA8B87 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -308,6 +336,9 @@
 			files = (
 				822AB00D2401B29600AA8B87 /* main.m in Sources */,
 				822AB0052401B29000AA8B87 /* AppDelegate.m in Sources */,
+				822AB03E24025F5500AA8B87 /* DemoVoiceView.m in Sources */,
+				822AB0342402352C00AA8B87 /* DemoView.mm in Sources */,
+				822AB03B24025C1000AA8B87 /* Metal.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
