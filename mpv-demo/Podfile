@@ -1,0 +1,9 @@
+platform :osx, '10.15'
+
+target 'mpv-demo' do
+  
+  use_frameworks!
+  
+  pod 'LibFfmpeg'
+
+end

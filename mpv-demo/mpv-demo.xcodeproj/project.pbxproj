@@ -1,0 +1,697 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C7EC246733DD22156258875 /* Pods_mpv_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7B3E544CF65ABF8507AE37 /* Pods_mpv_demo.framework */; };
+		822AB0AE2402852900AA8B87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0AD2402852900AA8B87 /* AppDelegate.m */; };
+		822AB0B02402853000AA8B87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0AF2402853000AA8B87 /* Assets.xcassets */; };
+		822AB0B32402853000AA8B87 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0B12402853000AA8B87 /* MainMenu.xib */; };
+		822AB0B62402853000AA8B87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0B52402853000AA8B87 /* main.m */; };
+		822AB0C12402853100AA8B87 /* mpv_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0C02402853100AA8B87 /* mpv_demoTests.m */; };
+		822AB0CC2402853100AA8B87 /* mpv_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0CB2402853100AA8B87 /* mpv_demoUITests.m */; };
+		822AB0DB2402870200AA8B87 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0DA2402870200AA8B87 /* demo.mp4 */; };
+		822AB0E72402870900AA8B87 /* libmpv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 822AB0E62402870900AA8B87 /* libmpv.1.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		822AB0BD2402853100AA8B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 822AB0A12402852900AA8B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 822AB0A82402852900AA8B87;
+			remoteInfo = "mpv-demo";
+		};
+		822AB0C82402853100AA8B87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 822AB0A12402852900AA8B87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 822AB0A82402852900AA8B87;
+			remoteInfo = "mpv-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		822AB0A92402852900AA8B87 /* mpv-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mpv-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AB0AC2402852900AA8B87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		822AB0AD2402852900AA8B87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		822AB0AF2402853000AA8B87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		822AB0B22402853000AA8B87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		822AB0B42402853000AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822AB0B52402853000AA8B87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		822AB0B72402853000AA8B87 /* mpv_demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mpv_demo.entitlements; sourceTree = "<group>"; };
+		822AB0BC2402853100AA8B87 /* mpv-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mpv-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AB0C02402853100AA8B87 /* mpv_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mpv_demoTests.m; sourceTree = "<group>"; };
+		822AB0C22402853100AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822AB0C72402853100AA8B87 /* mpv-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mpv-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		822AB0CB2402853100AA8B87 /* mpv_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mpv_demoUITests.m; sourceTree = "<group>"; };
+		822AB0CD2402853100AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822AB0DA2402870200AA8B87 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
+		822AB0DF2402870900AA8B87 /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
+		822AB0E02402870900AA8B87 /* stream_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_cb.h; sourceTree = "<group>"; };
+		822AB0E12402870900AA8B87 /* render_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_gl.h; sourceTree = "<group>"; };
+		822AB0E22402870900AA8B87 /* qthelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qthelper.hpp; sourceTree = "<group>"; };
+		822AB0E32402870900AA8B87 /* opengl_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_cb.h; sourceTree = "<group>"; };
+		822AB0E42402870900AA8B87 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		822AB0E62402870900AA8B87 /* libmpv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.1.dylib; sourceTree = "<group>"; };
+		8B7B3E544CF65ABF8507AE37 /* Pods_mpv_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mpv_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C6517899EDA2E72DA57E9CC /* Pods-mpv-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mpv-demo.release.xcconfig"; path = "Target Support Files/Pods-mpv-demo/Pods-mpv-demo.release.xcconfig"; sourceTree = "<group>"; };
+		F8A6E53A0870D9D3F90AF56E /* Pods-mpv-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mpv-demo.debug.xcconfig"; path = "Target Support Files/Pods-mpv-demo/Pods-mpv-demo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		822AB0A62402852900AA8B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C7EC246733DD22156258875 /* Pods_mpv_demo.framework in Frameworks */,
+				822AB0E72402870900AA8B87 /* libmpv.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0B92402853100AA8B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0C42402853100AA8B87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		822AB0A02402852900AA8B87 = {
+			isa = PBXGroup;
+			children = (
+				822AB0AB2402852900AA8B87 /* mpv-demo */,
+				822AB0BF2402853100AA8B87 /* mpv-demoTests */,
+				822AB0CA2402853100AA8B87 /* mpv-demoUITests */,
+				822AB0AA2402852900AA8B87 /* Products */,
+				D11FDA164D2B9495CABDB8F9 /* Pods */,
+				E058295727B752E412B63251 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		822AB0AA2402852900AA8B87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0A92402852900AA8B87 /* mpv-demo.app */,
+				822AB0BC2402853100AA8B87 /* mpv-demoTests.xctest */,
+				822AB0C72402853100AA8B87 /* mpv-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		822AB0AB2402852900AA8B87 /* mpv-demo */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0DC2402870900AA8B87 /* Deps */,
+				822AB0D92402870200AA8B87 /* Assets */,
+				822AB0AC2402852900AA8B87 /* AppDelegate.h */,
+				822AB0AD2402852900AA8B87 /* AppDelegate.m */,
+				822AB0AF2402853000AA8B87 /* Assets.xcassets */,
+				822AB0B12402853000AA8B87 /* MainMenu.xib */,
+				822AB0B42402853000AA8B87 /* Info.plist */,
+				822AB0B52402853000AA8B87 /* main.m */,
+				822AB0B72402853000AA8B87 /* mpv_demo.entitlements */,
+			);
+			path = "mpv-demo";
+			sourceTree = "<group>";
+		};
+		822AB0BF2402853100AA8B87 /* mpv-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0C02402853100AA8B87 /* mpv_demoTests.m */,
+				822AB0C22402853100AA8B87 /* Info.plist */,
+			);
+			path = "mpv-demoTests";
+			sourceTree = "<group>";
+		};
+		822AB0CA2402853100AA8B87 /* mpv-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0CB2402853100AA8B87 /* mpv_demoUITests.m */,
+				822AB0CD2402853100AA8B87 /* Info.plist */,
+			);
+			path = "mpv-demoUITests";
+			sourceTree = "<group>";
+		};
+		822AB0D92402870200AA8B87 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0DA2402870200AA8B87 /* demo.mp4 */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		822AB0DC2402870900AA8B87 /* Deps */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0DD2402870900AA8B87 /* include */,
+				822AB0E52402870900AA8B87 /* lib */,
+			);
+			path = Deps;
+			sourceTree = "<group>";
+		};
+		822AB0DD2402870900AA8B87 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0DE2402870900AA8B87 /* mpv */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		822AB0DE2402870900AA8B87 /* mpv */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0DF2402870900AA8B87 /* client.h */,
+				822AB0E02402870900AA8B87 /* stream_cb.h */,
+				822AB0E12402870900AA8B87 /* render_gl.h */,
+				822AB0E22402870900AA8B87 /* qthelper.hpp */,
+				822AB0E32402870900AA8B87 /* opengl_cb.h */,
+				822AB0E42402870900AA8B87 /* render.h */,
+			);
+			path = mpv;
+			sourceTree = "<group>";
+		};
+		822AB0E52402870900AA8B87 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				822AB0E62402870900AA8B87 /* libmpv.1.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		D11FDA164D2B9495CABDB8F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8A6E53A0870D9D3F90AF56E /* Pods-mpv-demo.debug.xcconfig */,
+				8C6517899EDA2E72DA57E9CC /* Pods-mpv-demo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E058295727B752E412B63251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B7B3E544CF65ABF8507AE37 /* Pods_mpv_demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		822AB0A82402852900AA8B87 /* mpv-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822AB0D02402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demo" */;
+			buildPhases = (
+				1BE08EBB3442835BCBA99F68 /* [CP] Check Pods Manifest.lock */,
+				822AB0A52402852900AA8B87 /* Sources */,
+				822AB0A62402852900AA8B87 /* Frameworks */,
+				822AB0A72402852900AA8B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mpv-demo";
+			productName = "mpv-demo";
+			productReference = 822AB0A92402852900AA8B87 /* mpv-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		822AB0BB2402853100AA8B87 /* mpv-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822AB0D32402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demoTests" */;
+			buildPhases = (
+				822AB0B82402853100AA8B87 /* Sources */,
+				822AB0B92402853100AA8B87 /* Frameworks */,
+				822AB0BA2402853100AA8B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				822AB0BE2402853100AA8B87 /* PBXTargetDependency */,
+			);
+			name = "mpv-demoTests";
+			productName = "mpv-demoTests";
+			productReference = 822AB0BC2402853100AA8B87 /* mpv-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		822AB0C62402853100AA8B87 /* mpv-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 822AB0D62402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demoUITests" */;
+			buildPhases = (
+				822AB0C32402853100AA8B87 /* Sources */,
+				822AB0C42402853100AA8B87 /* Frameworks */,
+				822AB0C52402853100AA8B87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				822AB0C92402853100AA8B87 /* PBXTargetDependency */,
+			);
+			name = "mpv-demoUITests";
+			productName = "mpv-demoUITests";
+			productReference = 822AB0C72402853100AA8B87 /* mpv-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		822AB0A12402852900AA8B87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = midoks;
+				TargetAttributes = {
+					822AB0A82402852900AA8B87 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					822AB0BB2402853100AA8B87 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 822AB0A82402852900AA8B87;
+					};
+					822AB0C62402853100AA8B87 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 822AB0A82402852900AA8B87;
+					};
+				};
+			};
+			buildConfigurationList = 822AB0A42402852900AA8B87 /* Build configuration list for PBXProject "mpv-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 822AB0A02402852900AA8B87;
+			productRefGroup = 822AB0AA2402852900AA8B87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				822AB0A82402852900AA8B87 /* mpv-demo */,
+				822AB0BB2402853100AA8B87 /* mpv-demoTests */,
+				822AB0C62402853100AA8B87 /* mpv-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		822AB0A72402852900AA8B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822AB0B02402853000AA8B87 /* Assets.xcassets in Resources */,
+				822AB0DB2402870200AA8B87 /* demo.mp4 in Resources */,
+				822AB0B32402853000AA8B87 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0BA2402853100AA8B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0C52402853100AA8B87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE08EBB3442835BCBA99F68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mpv-demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		822AB0A52402852900AA8B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822AB0B62402853000AA8B87 /* main.m in Sources */,
+				822AB0AE2402852900AA8B87 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0B82402853100AA8B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822AB0C12402853100AA8B87 /* mpv_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		822AB0C32402853100AA8B87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822AB0CC2402853100AA8B87 /* mpv_demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		822AB0BE2402853100AA8B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 822AB0A82402852900AA8B87 /* mpv-demo */;
+			targetProxy = 822AB0BD2402853100AA8B87 /* PBXContainerItemProxy */;
+		};
+		822AB0C92402853100AA8B87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 822AB0A82402852900AA8B87 /* mpv-demo */;
+			targetProxy = 822AB0C82402853100AA8B87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		822AB0B12402853000AA8B87 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				822AB0B22402853000AA8B87 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		822AB0CE2402853100AA8B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		822AB0CF2402853100AA8B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		822AB0D12402853100AA8B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8A6E53A0870D9D3F90AF56E /* Pods-mpv-demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mpv-demo/mpv_demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/LibFfmpeg\"",
+					"\"${PROJECT_ROOT}/mpv-demo/Deps/include\"",
+				);
+				INFOPLIST_FILE = "mpv-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mpv-demo/Deps/lib",
+					"$(SRCROOT)/mpv-demo/Deps/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		822AB0D22402853100AA8B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C6517899EDA2E72DA57E9CC /* Pods-mpv-demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mpv-demo/mpv_demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/LibFfmpeg\"",
+					"\"${PROJECT_ROOT}/mpv-demo/Deps/include\"",
+				);
+				INFOPLIST_FILE = "mpv-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mpv-demo/Deps/lib",
+					"$(SRCROOT)/mpv-demo/Deps/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		822AB0D42402853100AA8B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpv-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mpv-demo.app/Contents/MacOS/mpv-demo";
+			};
+			name = Debug;
+		};
+		822AB0D52402853100AA8B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpv-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mpv-demo.app/Contents/MacOS/mpv-demo";
+			};
+			name = Release;
+		};
+		822AB0D72402853100AA8B87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpv-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mpv-demo";
+			};
+			name = Debug;
+		};
+		822AB0D82402853100AA8B87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpv-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mpv-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		822AB0A42402852900AA8B87 /* Build configuration list for PBXProject "mpv-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822AB0CE2402853100AA8B87 /* Debug */,
+				822AB0CF2402853100AA8B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		822AB0D02402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822AB0D12402853100AA8B87 /* Debug */,
+				822AB0D22402853100AA8B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		822AB0D32402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822AB0D42402853100AA8B87 /* Debug */,
+				822AB0D52402853100AA8B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		822AB0D62402853100AA8B87 /* Build configuration list for PBXNativeTarget "mpv-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				822AB0D72402853100AA8B87 /* Debug */,
+				822AB0D82402853100AA8B87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 822AB0A12402852900AA8B87 /* Project object */;
+}
