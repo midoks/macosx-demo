@@ -14,8 +14,8 @@
 		822AB0B62402853000AA8B87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0B52402853000AA8B87 /* main.m */; };
 		822AB0C12402853100AA8B87 /* mpv_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0C02402853100AA8B87 /* mpv_demoTests.m */; };
 		822AB0CC2402853100AA8B87 /* mpv_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0CB2402853100AA8B87 /* mpv_demoUITests.m */; };
-		822AB0DB2402870200AA8B87 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0DA2402870200AA8B87 /* demo.mp4 */; };
 		822AB0E72402870900AA8B87 /* libmpv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 822AB0E62402870900AA8B87 /* libmpv.1.dylib */; };
+		82C2C50B240AFA8300485064 /* NSMpv.m in Sources */ = {isa = PBXBuildFile; fileRef = 82C2C50A240AFA8300485064 /* NSMpv.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 		822AB0C72402853100AA8B87 /* mpv-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mpv-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		822AB0CB2402853100AA8B87 /* mpv_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mpv_demoUITests.m; sourceTree = "<group>"; };
 		822AB0CD2402853100AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		822AB0DA2402870200AA8B87 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		822AB0DF2402870900AA8B87 /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
 		822AB0E02402870900AA8B87 /* stream_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_cb.h; sourceTree = "<group>"; };
 		822AB0E12402870900AA8B87 /* render_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_gl.h; sourceTree = "<group>"; };
@@ -58,6 +57,8 @@
 		822AB0E32402870900AA8B87 /* opengl_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_cb.h; sourceTree = "<group>"; };
 		822AB0E42402870900AA8B87 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
 		822AB0E62402870900AA8B87 /* libmpv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.1.dylib; sourceTree = "<group>"; };
+		82C2C509240AFA8300485064 /* NSMpv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSMpv.h; sourceTree = "<group>"; };
+		82C2C50A240AFA8300485064 /* NSMpv.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSMpv.m; sourceTree = "<group>"; };
 		8B7B3E544CF65ABF8507AE37 /* Pods_mpv_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mpv_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6517899EDA2E72DA57E9CC /* Pods-mpv-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mpv-demo.release.xcconfig"; path = "Target Support Files/Pods-mpv-demo/Pods-mpv-demo.release.xcconfig"; sourceTree = "<group>"; };
 		F8A6E53A0870D9D3F90AF56E /* Pods-mpv-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mpv-demo.debug.xcconfig"; path = "Target Support Files/Pods-mpv-demo/Pods-mpv-demo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,9 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				822AB0DC2402870900AA8B87 /* Deps */,
-				822AB0D92402870200AA8B87 /* Assets */,
 				822AB0AC2402852900AA8B87 /* AppDelegate.h */,
 				822AB0AD2402852900AA8B87 /* AppDelegate.m */,
+				82C2C509240AFA8300485064 /* NSMpv.h */,
+				82C2C50A240AFA8300485064 /* NSMpv.m */,
 				822AB0AF2402853000AA8B87 /* Assets.xcassets */,
 				822AB0B12402853000AA8B87 /* MainMenu.xib */,
 				822AB0B42402853000AA8B87 /* Info.plist */,
@@ -144,14 +146,6 @@
 				822AB0CD2402853100AA8B87 /* Info.plist */,
 			);
 			path = "mpv-demoUITests";
-			sourceTree = "<group>";
-		};
-		822AB0D92402870200AA8B87 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				822AB0DA2402870200AA8B87 /* demo.mp4 */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		822AB0DC2402870900AA8B87 /* Deps */ = {
@@ -314,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				822AB0B02402853000AA8B87 /* Assets.xcassets in Resources */,
-				822AB0DB2402870200AA8B87 /* demo.mp4 in Resources */,
 				822AB0B32402853000AA8B87 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82C2C50B240AFA8300485064 /* NSMpv.m in Sources */,
 				822AB0B62402853000AA8B87 /* main.m in Sources */,
 				822AB0AE2402852900AA8B87 /* AppDelegate.m in Sources */,
 			);
@@ -546,6 +540,7 @@
 					"$(PROJECT_DIR)/mpv-demo/Deps/lib",
 					"$(SRCROOT)/mpv-demo/Deps/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -575,6 +570,7 @@
 					"$(PROJECT_DIR)/mpv-demo/Deps/lib",
 					"$(SRCROOT)/mpv-demo/Deps/lib",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpv-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
