@@ -14,7 +14,6 @@
 		826AB85E2408273B00B87C63 /* mpvGL_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 826AB85D2408273B00B87C63 /* mpvGL_demoTests.m */; };
 		826AB8692408273B00B87C63 /* mpvGL_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 826AB8682408273B00B87C63 /* mpvGL_demoUITests.m */; };
 		826AB8812408287900B87C63 /* libmpv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 826AB8802408287900B87C63 /* libmpv.1.dylib */; };
-		826AB8842408295500B87C63 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 826AB8832408295500B87C63 /* demo.mp4 */; };
 		826AB88724082BB500B87C63 /* GLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 826AB88624082BB500B87C63 /* GLView.m */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +56,6 @@
 		826AB87D2408287900B87C63 /* opengl_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_cb.h; sourceTree = "<group>"; };
 		826AB87E2408287900B87C63 /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
 		826AB8802408287900B87C63 /* libmpv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.1.dylib; sourceTree = "<group>"; };
-		826AB8832408295500B87C63 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		826AB88524082BB500B87C63 /* GLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLView.h; sourceTree = "<group>"; };
 		826AB88624082BB500B87C63 /* GLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,7 +109,6 @@
 		826AB8482408273300B87C63 /* mpvGL-demo */ = {
 			isa = PBXGroup;
 			children = (
-				826AB8822408295500B87C63 /* Assets */,
 				826AB8762408287900B87C63 /* Deps */,
 				826AB8492408273300B87C63 /* AppDelegate.h */,
 				826AB84A2408273300B87C63 /* AppDelegate.m */,
@@ -180,14 +177,6 @@
 				826AB8802408287900B87C63 /* libmpv.1.dylib */,
 			);
 			path = lib;
-			sourceTree = "<group>";
-		};
-		826AB8822408295500B87C63 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				826AB8832408295500B87C63 /* demo.mp4 */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				826AB84D2408273A00B87C63 /* Assets.xcassets in Resources */,
-				826AB8842408295500B87C63 /* demo.mp4 in Resources */,
 				826AB8502408273A00B87C63 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

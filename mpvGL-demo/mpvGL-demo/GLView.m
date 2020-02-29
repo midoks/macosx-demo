@@ -60,7 +60,7 @@ static dispatch_once_t _instance_once;
 - (id)initWithFrame:(NSRect)frame{
     self = [self initMpvGL:frame];
     if (self) {
-        
+        [self registerForDraggedTypes:[NSArray arrayWithObjects:NSPasteboardTypeFileURL, nil]];
         [self setAutoresizingMask:NSViewWidthSizable|NSViewHeightSizable];
         
     }
@@ -240,6 +240,19 @@ static void glupdate(void *ctx)
     int64_t data;
     mpv_get_property(mpv, name.UTF8String, MPV_FORMAT_INT64, &data);
     return (double)data;
+}
+
+// 当文件被拖动到界面触发
+- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender {
+    return NSDragOperationCopy;
+}
+
+//当文件在界面中放手
+-(BOOL)prepareForDragOperation:(id<NSDraggingInfo>)sender {
+    NSPasteboard *zPasteboard = [sender draggingPasteboard];
+    NSArray *files = [zPasteboard propertyListForType:NSFilenamesPboardType];
+    [self openVideo:[files objectAtIndex:0]];
+    return YES;
 }
 
 @end

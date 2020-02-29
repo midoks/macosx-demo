@@ -18,10 +18,10 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     
-    NSString *filename = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"];
+//    NSString *filename = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"];
     GLView *gl = [GLView Instance:self.window.frame];
     [gl initVideo];
-    [gl openVideo:filename];
+//    [gl openVideo:filename];
     self.window.contentView = gl;
     
     [self.window makeKeyWindow];
