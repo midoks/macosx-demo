@@ -15,7 +15,6 @@
 		822AB0182401B29800AA8B87 /* ffmpeg_player_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0172401B29800AA8B87 /* ffmpeg_player_demoTests.m */; };
 		822AB0232401B29800AA8B87 /* ffmpeg_player_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0222401B29800AA8B87 /* ffmpeg_player_demoUITests.m */; };
 		822AB0342402352C00AA8B87 /* DemoView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 822AB0332402352C00AA8B87 /* DemoView.mm */; };
-		822AB0372402448E00AA8B87 /* demo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 822AB0362402448D00AA8B87 /* demo.mp4 */; };
 		822AB03924025B2E00AA8B87 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 822AB03824025B2E00AA8B87 /* CoreMedia.framework */; };
 		822AB03B24025C1000AA8B87 /* Metal.metal in Sources */ = {isa = PBXBuildFile; fileRef = 822AB03A24025C1000AA8B87 /* Metal.metal */; };
 		822AB03E24025F5500AA8B87 /* DemoVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 822AB03D24025F5500AA8B87 /* DemoVoiceView.m */; };
@@ -55,7 +54,6 @@
 		822AB0242401B29800AA8B87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822AB0302402314E00AA8B87 /* DemoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoView.h; sourceTree = "<group>"; };
 		822AB0332402352C00AA8B87 /* DemoView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DemoView.mm; sourceTree = "<group>"; };
-		822AB0362402448D00AA8B87 /* demo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = demo.mp4; sourceTree = "<group>"; };
 		822AB03824025B2E00AA8B87 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		822AB03A24025C1000AA8B87 /* Metal.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Metal.metal; sourceTree = "<group>"; };
 		822AB03C24025F5500AA8B87 /* DemoVoiceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoVoiceView.h; sourceTree = "<group>"; };
@@ -127,7 +125,6 @@
 			isa = PBXGroup;
 			children = (
 				822AB03A24025C1000AA8B87 /* Metal.metal */,
-				822AB0352402448D00AA8B87 /* Assets */,
 				822AB0302402314E00AA8B87 /* DemoView.h */,
 				822AB0332402352C00AA8B87 /* DemoView.mm */,
 				822AB03C24025F5500AA8B87 /* DemoVoiceView.h */,
@@ -159,14 +156,6 @@
 				822AB0242401B29800AA8B87 /* Info.plist */,
 			);
 			path = "ffmpeg-player-demoUITests";
-			sourceTree = "<group>";
-		};
-		822AB0352402448D00AA8B87 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				822AB0362402448D00AA8B87 /* demo.mp4 */,
-			);
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		8657CDE7FDBCEA2078888311 /* Frameworks */ = {
@@ -283,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				822AB0072401B29600AA8B87 /* Assets.xcassets in Resources */,
-				822AB0372402448E00AA8B87 /* demo.mp4 in Resources */,
 				822AB00A2401B29600AA8B87 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +495,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.ffmpeg-player-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -525,6 +514,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.ffmpeg-player-demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -54,12 +54,16 @@ extern "C" {
     if (self) {
         self.wantsLayer = true;
         self.layer.backgroundColor = [NSColor yellowColor].CGColor;
+        [self registerForDraggedTypes:[NSArray arrayWithObjects:NSPasteboardTypeFileURL, nil]];
         
-        
-        NSString * videoPath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"];
-        [self initVideo:videoPath];
+//        NSString * videoPath = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"mp4"];
+//        [self initVideo:videoPath];
     }
     return self;
+}
+
+-(void) openVideo:(NSString *)videoPath{
+    [self initVideo:videoPath];
 }
 
 -(void)initVideo:(NSString *)videoPath{
@@ -388,6 +392,20 @@ extern "C" {
 
 - (void)drawRect:(NSRect)dirtyRect {
     [super drawRect:dirtyRect];
+}
+
+#pragma mark - 外部文件拖拽功能
+// 当文件被拖动到界面触发
+- (NSDragOperation)draggingEntered:(id <NSDraggingInfo>)sender {
+    return NSDragOperationCopy;
+}
+
+//当文件在界面中放手
+-(BOOL)prepareForDragOperation:(id<NSDraggingInfo>)sender {
+    NSPasteboard *zPasteboard = [sender draggingPasteboard];
+    NSArray *files = [zPasteboard propertyListForType:NSFilenamesPboardType];
+    [self openVideo:[files objectAtIndex:0]];
+    return YES;
 }
 
 @end

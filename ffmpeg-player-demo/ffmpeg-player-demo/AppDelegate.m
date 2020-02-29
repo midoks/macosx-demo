@@ -21,8 +21,7 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    
-    
+
     // NSLog(@"%@",NSStringFromRect(self.window.frame));
     // NSLog(@"%@",NSStringFromRect(self.window.contentView.frame));
     
@@ -42,6 +41,8 @@
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
 }
+
+
 
 
 @end

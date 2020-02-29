@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoVoiceView : NSView
 
+
+-(void) openVideo:(NSString *)videoPath;
+
 @end
 
 NS_ASSUME_NONNULL_END

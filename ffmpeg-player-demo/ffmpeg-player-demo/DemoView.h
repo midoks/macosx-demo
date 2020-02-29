@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DemoView : MTKView
 
+-(void) openVideo:(NSString *)videoPath;
 @end
 
 NS_ASSUME_NONNULL_END
