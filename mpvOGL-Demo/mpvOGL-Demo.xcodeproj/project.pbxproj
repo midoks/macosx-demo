@@ -1,0 +1,657 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8212F6CB240BA5950022EC8D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F6CA240BA5950022EC8D /* AppDelegate.m */; };
+		8212F6CD240BA59B0022EC8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8212F6CC240BA59B0022EC8D /* Assets.xcassets */; };
+		8212F6D0240BA59B0022EC8D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8212F6CE240BA59B0022EC8D /* MainMenu.xib */; };
+		8212F6D3240BA59B0022EC8D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F6D2240BA59B0022EC8D /* main.m */; };
+		8212F6DE240BA59B0022EC8D /* mpvOGL_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F6DD240BA59B0022EC8D /* mpvOGL_DemoTests.m */; };
+		8212F6E9240BA59C0022EC8D /* mpvOGL_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F6E8240BA59C0022EC8D /* mpvOGL_DemoUITests.m */; };
+		8212F6F9240BA5DC0022EC8D /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F6F8240BA5DC0022EC8D /* VideoView.m */; };
+		8212F705240BAF8F0022EC8D /* libmpv.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8212F704240BAF8F0022EC8D /* libmpv.1.dylib */; };
+		8212F708240BB2580022EC8D /* VideoLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8212F707240BB2580022EC8D /* VideoLayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8212F6DA240BA59B0022EC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8212F6BE240BA5950022EC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8212F6C5240BA5950022EC8D;
+			remoteInfo = "mpvOGL-Demo";
+		};
+		8212F6E5240BA59C0022EC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8212F6BE240BA5950022EC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8212F6C5240BA5950022EC8D;
+			remoteInfo = "mpvOGL-Demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8212F6C6240BA5950022EC8D /* mpvOGL-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mpvOGL-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8212F6C9240BA5950022EC8D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8212F6CA240BA5950022EC8D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8212F6CC240BA59B0022EC8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8212F6CF240BA59B0022EC8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8212F6D1240BA59B0022EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8212F6D2240BA59B0022EC8D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8212F6D4240BA59B0022EC8D /* mpvOGL_Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mpvOGL_Demo.entitlements; sourceTree = "<group>"; };
+		8212F6D9240BA59B0022EC8D /* mpvOGL-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mpvOGL-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8212F6DD240BA59B0022EC8D /* mpvOGL_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mpvOGL_DemoTests.m; sourceTree = "<group>"; };
+		8212F6DF240BA59C0022EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8212F6E4240BA59C0022EC8D /* mpvOGL-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mpvOGL-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8212F6E8240BA59C0022EC8D /* mpvOGL_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mpvOGL_DemoUITests.m; sourceTree = "<group>"; };
+		8212F6EA240BA59C0022EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8212F6F7240BA5DC0022EC8D /* VideoView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		8212F6F8240BA5DC0022EC8D /* VideoView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		8212F6FD240BAF8F0022EC8D /* client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = client.h; sourceTree = "<group>"; };
+		8212F6FE240BAF8F0022EC8D /* stream_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stream_cb.h; sourceTree = "<group>"; };
+		8212F6FF240BAF8F0022EC8D /* render_gl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render_gl.h; sourceTree = "<group>"; };
+		8212F700240BAF8F0022EC8D /* qthelper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = qthelper.hpp; sourceTree = "<group>"; };
+		8212F701240BAF8F0022EC8D /* opengl_cb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opengl_cb.h; sourceTree = "<group>"; };
+		8212F702240BAF8F0022EC8D /* render.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = render.h; sourceTree = "<group>"; };
+		8212F704240BAF8F0022EC8D /* libmpv.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libmpv.1.dylib; sourceTree = "<group>"; };
+		8212F706240BB2580022EC8D /* VideoLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoLayer.h; sourceTree = "<group>"; };
+		8212F707240BB2580022EC8D /* VideoLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoLayer.m; sourceTree = "<group>"; };
+		829950B0240BFD95001725DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		829950B2240C112D001725DC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8212F6C3240BA5950022EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8212F705240BAF8F0022EC8D /* libmpv.1.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6D6240BA59B0022EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6E1240BA59C0022EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8212F6BD240BA5950022EC8D = {
+			isa = PBXGroup;
+			children = (
+				8212F6C8240BA5950022EC8D /* mpvOGL-Demo */,
+				8212F6DC240BA59B0022EC8D /* mpvOGL-DemoTests */,
+				8212F6E7240BA59C0022EC8D /* mpvOGL-DemoUITests */,
+				8212F6C7240BA5950022EC8D /* Products */,
+				829950AF240BFD94001725DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8212F6C7240BA5950022EC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6C6240BA5950022EC8D /* mpvOGL-Demo.app */,
+				8212F6D9240BA59B0022EC8D /* mpvOGL-DemoTests.xctest */,
+				8212F6E4240BA59C0022EC8D /* mpvOGL-DemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8212F6C8240BA5950022EC8D /* mpvOGL-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6FA240BAF8F0022EC8D /* Deps */,
+				8212F6F6240BA5C50022EC8D /* View */,
+				8212F6C9240BA5950022EC8D /* AppDelegate.h */,
+				8212F6CA240BA5950022EC8D /* AppDelegate.m */,
+				8212F6CC240BA59B0022EC8D /* Assets.xcassets */,
+				8212F6CE240BA59B0022EC8D /* MainMenu.xib */,
+				8212F6D1240BA59B0022EC8D /* Info.plist */,
+				8212F6D2240BA59B0022EC8D /* main.m */,
+				8212F6D4240BA59B0022EC8D /* mpvOGL_Demo.entitlements */,
+			);
+			path = "mpvOGL-Demo";
+			sourceTree = "<group>";
+		};
+		8212F6DC240BA59B0022EC8D /* mpvOGL-DemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6DD240BA59B0022EC8D /* mpvOGL_DemoTests.m */,
+				8212F6DF240BA59C0022EC8D /* Info.plist */,
+			);
+			path = "mpvOGL-DemoTests";
+			sourceTree = "<group>";
+		};
+		8212F6E7240BA59C0022EC8D /* mpvOGL-DemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6E8240BA59C0022EC8D /* mpvOGL_DemoUITests.m */,
+				8212F6EA240BA59C0022EC8D /* Info.plist */,
+			);
+			path = "mpvOGL-DemoUITests";
+			sourceTree = "<group>";
+		};
+		8212F6F6240BA5C50022EC8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6F7240BA5DC0022EC8D /* VideoView.h */,
+				8212F6F8240BA5DC0022EC8D /* VideoView.m */,
+				8212F706240BB2580022EC8D /* VideoLayer.h */,
+				8212F707240BB2580022EC8D /* VideoLayer.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8212F6FA240BAF8F0022EC8D /* Deps */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6FB240BAF8F0022EC8D /* include */,
+				8212F703240BAF8F0022EC8D /* lib */,
+			);
+			path = Deps;
+			sourceTree = "<group>";
+		};
+		8212F6FB240BAF8F0022EC8D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6FC240BAF8F0022EC8D /* mpv */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8212F6FC240BAF8F0022EC8D /* mpv */ = {
+			isa = PBXGroup;
+			children = (
+				8212F6FD240BAF8F0022EC8D /* client.h */,
+				8212F6FE240BAF8F0022EC8D /* stream_cb.h */,
+				8212F6FF240BAF8F0022EC8D /* render_gl.h */,
+				8212F700240BAF8F0022EC8D /* qthelper.hpp */,
+				8212F701240BAF8F0022EC8D /* opengl_cb.h */,
+				8212F702240BAF8F0022EC8D /* render.h */,
+			);
+			path = mpv;
+			sourceTree = "<group>";
+		};
+		8212F703240BAF8F0022EC8D /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8212F704240BAF8F0022EC8D /* libmpv.1.dylib */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		829950AF240BFD94001725DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				829950B2240C112D001725DC /* QuartzCore.framework */,
+				829950B0240BFD95001725DC /* OpenGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8212F6C5240BA5950022EC8D /* mpvOGL-Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8212F6ED240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-Demo" */;
+			buildPhases = (
+				8212F6C2240BA5950022EC8D /* Sources */,
+				8212F6C3240BA5950022EC8D /* Frameworks */,
+				8212F6C4240BA5950022EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mpvOGL-Demo";
+			productName = "mpvOGL-Demo";
+			productReference = 8212F6C6240BA5950022EC8D /* mpvOGL-Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8212F6D8240BA59B0022EC8D /* mpvOGL-DemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8212F6F0240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-DemoTests" */;
+			buildPhases = (
+				8212F6D5240BA59B0022EC8D /* Sources */,
+				8212F6D6240BA59B0022EC8D /* Frameworks */,
+				8212F6D7240BA59B0022EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8212F6DB240BA59B0022EC8D /* PBXTargetDependency */,
+			);
+			name = "mpvOGL-DemoTests";
+			productName = "mpvOGL-DemoTests";
+			productReference = 8212F6D9240BA59B0022EC8D /* mpvOGL-DemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8212F6E3240BA59C0022EC8D /* mpvOGL-DemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8212F6F3240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-DemoUITests" */;
+			buildPhases = (
+				8212F6E0240BA59C0022EC8D /* Sources */,
+				8212F6E1240BA59C0022EC8D /* Frameworks */,
+				8212F6E2240BA59C0022EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8212F6E6240BA59C0022EC8D /* PBXTargetDependency */,
+			);
+			name = "mpvOGL-DemoUITests";
+			productName = "mpvOGL-DemoUITests";
+			productReference = 8212F6E4240BA59C0022EC8D /* mpvOGL-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8212F6BE240BA5950022EC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = midoks;
+				TargetAttributes = {
+					8212F6C5240BA5950022EC8D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8212F6D8240BA59B0022EC8D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8212F6C5240BA5950022EC8D;
+					};
+					8212F6E3240BA59C0022EC8D = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8212F6C5240BA5950022EC8D;
+					};
+				};
+			};
+			buildConfigurationList = 8212F6C1240BA5950022EC8D /* Build configuration list for PBXProject "mpvOGL-Demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8212F6BD240BA5950022EC8D;
+			productRefGroup = 8212F6C7240BA5950022EC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8212F6C5240BA5950022EC8D /* mpvOGL-Demo */,
+				8212F6D8240BA59B0022EC8D /* mpvOGL-DemoTests */,
+				8212F6E3240BA59C0022EC8D /* mpvOGL-DemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8212F6C4240BA5950022EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8212F6CD240BA59B0022EC8D /* Assets.xcassets in Resources */,
+				8212F6D0240BA59B0022EC8D /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6D7240BA59B0022EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6E2240BA59C0022EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8212F6C2240BA5950022EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8212F6D3240BA59B0022EC8D /* main.m in Sources */,
+				8212F6F9240BA5DC0022EC8D /* VideoView.m in Sources */,
+				8212F6CB240BA5950022EC8D /* AppDelegate.m in Sources */,
+				8212F708240BB2580022EC8D /* VideoLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6D5240BA59B0022EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8212F6DE240BA59B0022EC8D /* mpvOGL_DemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8212F6E0240BA59C0022EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8212F6E9240BA59C0022EC8D /* mpvOGL_DemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8212F6DB240BA59B0022EC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8212F6C5240BA5950022EC8D /* mpvOGL-Demo */;
+			targetProxy = 8212F6DA240BA59B0022EC8D /* PBXContainerItemProxy */;
+		};
+		8212F6E6240BA59C0022EC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8212F6C5240BA5950022EC8D /* mpvOGL-Demo */;
+			targetProxy = 8212F6E5240BA59C0022EC8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8212F6CE240BA59B0022EC8D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8212F6CF240BA59B0022EC8D /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8212F6EB240BA59C0022EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8212F6EC240BA59C0022EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8212F6EE240BA59C0022EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mpvOGL-Demo/mpvOGL_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/mpvOGL-Demo/Deps/include";
+				INFOPLIST_FILE = "mpvOGL-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mpvOGL-Demo/Deps/lib",
+					"$(SRCROOT)/mpvOGL-Demo/Deps/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8212F6EF240BA59C0022EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "mpvOGL-Demo/mpvOGL_Demo.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/mpvOGL-Demo/Deps/include";
+				INFOPLIST_FILE = "mpvOGL-Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mpvOGL-Demo/Deps/lib",
+					"$(SRCROOT)/mpvOGL-Demo/Deps/lib",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8212F6F1240BA59C0022EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpvOGL-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mpvOGL-Demo.app/Contents/MacOS/mpvOGL-Demo";
+			};
+			name = Debug;
+		};
+		8212F6F2240BA59C0022EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpvOGL-DemoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-DemoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mpvOGL-Demo.app/Contents/MacOS/mpvOGL-Demo";
+			};
+			name = Release;
+		};
+		8212F6F4240BA59C0022EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpvOGL-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mpvOGL-Demo";
+			};
+			name = Debug;
+		};
+		8212F6F5240BA59C0022EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "mpvOGL-DemoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midoks.mpvOGL-DemoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "mpvOGL-Demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8212F6C1240BA5950022EC8D /* Build configuration list for PBXProject "mpvOGL-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8212F6EB240BA59C0022EC8D /* Debug */,
+				8212F6EC240BA59C0022EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8212F6ED240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8212F6EE240BA59C0022EC8D /* Debug */,
+				8212F6EF240BA59C0022EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8212F6F0240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-DemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8212F6F1240BA59C0022EC8D /* Debug */,
+				8212F6F2240BA59C0022EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8212F6F3240BA59C0022EC8D /* Build configuration list for PBXNativeTarget "mpvOGL-DemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8212F6F4240BA59C0022EC8D /* Debug */,
+				8212F6F5240BA59C0022EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8212F6BE240BA5950022EC8D /* Project object */;
+}
